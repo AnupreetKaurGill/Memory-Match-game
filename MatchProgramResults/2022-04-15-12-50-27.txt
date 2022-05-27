@@ -1,0 +1,5 @@
+Participant Number: 3
+Images or Text Used for Matching: Images
+Number of Cards Used (ColumnsxRows): 2x4
+Total Time Taken: 25s 
+Total Number of Attempts: 7
