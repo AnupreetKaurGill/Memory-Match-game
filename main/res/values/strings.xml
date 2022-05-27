@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MemoryMatch</string>
+    <string name="setup_title">Memory Match Setup</string>
+    <string name="participant">Participant</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="textImage">Text or Image</string>
+    <string name="butOK">Ok</string>
+    <string name="butExit">Exit</string>
+</resources>

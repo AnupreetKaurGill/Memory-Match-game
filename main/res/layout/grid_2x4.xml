@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GridMemoryMatch" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name" />
+
+        <GridView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridview2x4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ff222222"
+            android:gravity="center"
+            android:horizontalSpacing="3dp"
+            android:numColumns="2"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow android:layout_width="fill_parent"
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stretchColumns="0, 1">
+                <ImageView
+                    android:id="@+id/imgTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_timer_24">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textTimer"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </TableRow>
+
+            <TableRow android:layout_width="fill_parent"
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:stretchColumns="0, 1">
+                <ImageView
+                    android:id="@+id/imgAttempt"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_numbers_24">
+                </ImageView>
+                <TextView
+                    android:id="@+id/attemptCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                </TextView>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>
